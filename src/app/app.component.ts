@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ElementRef } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -7,5 +7,20 @@ import { Component } from '@angular/core';
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
-  title = 'shani';
+  title = 'knightone';
+  constructor(private el: ElementRef) { }
+
+  scrollToSection(sectionId: string) {
+    const element = this.el.nativeElement.querySelector('#' + sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  }
+
+    isMenuOpen: boolean = false;
+
+  // Function to toggle menu
+  toggleMenu() {
+    this.isMenuOpen = !this.isMenuOpen;
+  }
 }

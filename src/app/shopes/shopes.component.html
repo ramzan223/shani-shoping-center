@@ -1,0 +1,43 @@
+<section id="portfolio">
+  <div class="container my-5">
+    <div class="row">
+      <div id="nav_section">
+        <h2 class="nav_title">Shani Shopping Centers</h2>
+        <p class="section_subtitle">
+          Shani Center is a place that brings many shops together in one
+          location. You can find different stores like Shani Shopping Center,
+          Shani Lac Center, and Shani General Store. Below, you can choose a
+          shop to see more details.
+        </p>
+      </div>
+
+      <nav class="portfolio-filter">
+        <ul class="nav-menu">
+          <li routerLinkActive="active">
+            <a routerLink="/matching">Shani Matching Center</a>
+          </li>
+
+          <li
+            routerLinkActive="active"
+            [routerLinkActiveOptions]="{ exact: true }"
+          >
+            <a routerLink="/gota">Shani Ghota/Knari Center</a>
+          </li>
+
+          <li routerLinkActive="active">
+            <a routerLink="/jenral">Shani General Store</a>
+          </li>
+
+          <li routerLinkActive="active">
+            <a routerLink="/lac">Shani Lac Center</a>
+          </li>
+
+          <li routerLinkActive="active">
+            <a routerLink="/ladies">Shani Ladies General/Lac Center</a>
+          </li>
+        </ul>
+      </nav>
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</section>
