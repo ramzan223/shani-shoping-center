@@ -111,9 +111,6 @@
       }
     }
   },
-  "devDependencies": {
-  "@netlify/angular-runtime": "latest"
-},
   "cli": {
     "analytics": false
   }
