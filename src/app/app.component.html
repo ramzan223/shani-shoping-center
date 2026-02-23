@@ -1,9 +1,11 @@
 <section id="navbar_bckground_color">
   <div class="container">
     <nav>
-      <h1>Shani Shopings Center</h1>
+      <h1><a (click)="scrollToSection('home')">Shani Shopings Center</a></h1>
 
-      <button (click)="toggleMenu()" class="menu-btn"><i class="ri-menu-line"></i></button>
+      <button (click)="toggleMenu()" class="menu-btn">
+        <i class="ri-menu-line"></i>
+      </button>
 
       <ul [class.active]="isMenuOpen" class="menu">
         <li><a (click)="scrollToSection('home')">Home</a></li>
@@ -19,6 +21,7 @@
         <li><a (click)="scrollToSection('contact')">Contact</a></li>
       </ul>
     </nav>
+
   </div>
 </section>
 
@@ -29,6 +32,8 @@
 <section id="shopes">
   <app-shopes></app-shopes>
 </section>
+
+
 
 <!-- <section id="about">
   <app-about></app-about>

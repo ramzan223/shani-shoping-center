@@ -17,12 +17,37 @@ $font-stack: 'Inter', sans-serif;
     top: 0;
     background-color: rgba(0, 0, 0, 0.411);
 
+    .btn_primarys {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 8px 40px;
+        color: white;
+        background-color: #0099618c;
+        outline: none;
+        border: none;
+        border-radius: 50px;
+
+        &:hover {
+            background-color: #009961;
+        }
+    }
+
     nav {
         display: flex;
         padding: 12px 0;
         justify-content: space-between;
         align-items: center;
         flex-wrap: wrap;
+
+        h1 {
+            cursor: pointer;
+
+            &:hover {
+                color: rgba(248, 242, 207, 0.886);
+                transition: 1s ease-in-out;
+            }
+        }
 
         .menu-btn {
             display: none;
@@ -63,7 +88,14 @@ $font-stack: 'Inter', sans-serif;
                     justify-content: center;
                     border: 1px solid gray;
                     border-radius: 12px;
-                    padding: 2px;
+                    padding: 4px;
+                    font-size: 12px;
+
+                    &:hover {
+                        background-color: black;
+                        color: rgba(248, 242, 207, 0.886);
+                        transition: 1s ease-in-out;
+                    }
 
                     a {
                         font-size: 8px;

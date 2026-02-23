@@ -5,6 +5,7 @@ import { LacComponent } from './lac/lac.component';
 import { JenralComponent } from './jenral/jenral.component';
 import { MatchingComponent } from './matching/matching.component';
 import { LadiesComponent } from './ladies/ladies.component';
+import { ShopesComponent } from './shopes/shopes.component';
 
 const routes: Routes = [
    { path: '', redirectTo: '/gota', pathMatch: 'full' },
@@ -13,6 +14,7 @@ const routes: Routes = [
      { path: 'jenral', component: JenralComponent },
      { path: 'matching', component: MatchingComponent },
      { path: 'ladies', component: LadiesComponent },
+     { path: 'shop', component: ShopesComponent },
 ];
 
 @NgModule({
