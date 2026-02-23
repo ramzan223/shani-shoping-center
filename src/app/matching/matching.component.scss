@@ -1,0 +1,80 @@
+    .home_bckground_image {
+        height: 100%;
+        background-image: url("/img/shop_back.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        display: flex;
+        color: white;
+        margin-top: -68px;
+
+        .home_bckground_colors {
+            background-color: rgba(0, 0, 0, 0.651);
+            height: 101.8vh;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            h1 {
+                font-size: 3.2rem;
+                color: rgba(255, 255, 255, 0.83);
+                text-align: center;
+            }
+
+            p {
+                font-size: 1.4rem;
+                color: rgba(255, 255, 255, 0.816);
+                text-align: justify;
+            }
+
+            .btn_primarys {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 8px 40px;
+                color: white;
+                background-color: #0099618c;
+                outline: none;
+                border: none;
+                border-radius: 50px;
+
+                &:hover {
+                    background-color: #009961;
+                }
+            }
+
+            span {
+                display: flex;
+                width: 100%;
+                justify-content: center;
+
+            }
+
+            @media (max-width: 768px) {
+                h1 {
+                    font-size: 1.6rem;
+                }
+
+                p {
+                    font-size: 1rem;
+                }
+            }
+
+
+            @media (max-width: 368px) {
+                h1 {
+                    font-size: 0.6rem;
+                }
+
+                p {
+                    font-size: 0.6rem;
+                }
+            }
+
+
+
+        }
+    }
+
