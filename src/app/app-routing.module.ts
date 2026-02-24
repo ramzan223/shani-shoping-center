@@ -8,7 +8,7 @@ import { LadiesComponent } from './ladies/ladies.component';
 import { ShopesComponent } from './shopes/shopes.component';
 
 const routes: Routes = [
-   { path: '', redirectTo: '/gota', pathMatch: 'full' },
+   { path: '', redirectTo: '/matching', pathMatch: 'full' },
      { path: 'gota', component: GotaComponent },
      { path: 'lac', component: LacComponent },
      { path: 'jenral', component: JenralComponent },

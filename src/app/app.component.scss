@@ -43,6 +43,26 @@ $font-stack: 'Inter', sans-serif;
         h1 {
             cursor: pointer;
 
+            a {
+                display: flex;
+                gap: 10px;
+                align-items: center;
+            }
+
+            @media (max-width:300px) {
+                a {
+                    img {
+                        display: none;
+                    }
+                }
+            }
+
+            img {
+                border-radius: 50%;
+                height: 35px;
+                width: 35px;
+            }
+
             &:hover {
                 color: rgba(248, 242, 207, 0.886);
                 transition: 1s ease-in-out;
@@ -106,6 +126,8 @@ $font-stack: 'Inter', sans-serif;
 
             .menu.active {
                 display: flex;
+                justify-content: space-between;
+
             }
 
             .menu-btn {

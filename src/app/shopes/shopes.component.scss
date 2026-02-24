@@ -1,32 +1,26 @@
 #portfolio {
     .nav_section {
-        text-align: left;
         display: flex;
         flex-direction: column;
-        gap: 20px;
 
-        .nav_title {
+        h1 {
             font-size: 2rem;
-            font-weight: 700;
-            position: relative;
-            display: inline-block; // ensures underline matches text width
-
-            &::after {
-                content: "";
-                position: absolute;
-                left: 0;
-                bottom: -24px; // adjust distance from text
-                width: 55px; // length of green line
-                height: 3px; // thickness of green line
-                background-color: #00b894; // green color
-                border-radius: 2px;
-            }
         }
 
-        .section_subtitle {
-            color: #888;
-            margin-top: 1rem;
-            font-size: 0.95rem;
+        p {
+            font-size: 1.2rem;
+        }
+
+
+        @media (max-width:786px) {
+            h1 {
+                font-size: 1.2rem;
+                font-weight: 500;
+            }
+
+            p {
+                font-size: 0.8rem;
+            }
         }
     }
 
@@ -64,6 +58,13 @@
                         background-color: #009961;
                         color: white;
                     }
+                }
+
+                @media (max-width:786px) {
+a{
+    padding: 4px 15px;
+    font-size: 12px;
+}
                 }
 
                 &.active a {
