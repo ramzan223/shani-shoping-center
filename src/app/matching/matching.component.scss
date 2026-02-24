@@ -1,4 +1,4 @@
-    .home_bckground_image {
+    #home_bckground_image {
         height: 100%;
         background-image: url("/img/shop_back.jpg");
         background-repeat: no-repeat;
@@ -71,9 +71,9 @@
                     font-size: 1rem;
                 }
 
-                .btn_primarys{
-                     padding: 5px 20px;
-                     font-size: small;
+                .btn_primarys {
+                    padding: 5px 20px;
+                    font-size: small;
                 }
             }
 
@@ -136,10 +136,10 @@
             }
         }
 
-        .anucement{
-            img{
-            width: 100%;
-            height: 100%;
+        .anucement {
+            img {
+                width: 100%;
+                height: 100%;
             }
 
         }
@@ -164,4 +164,43 @@
             }
         }
 
+    }
+
+    #price {
+        background-color: rgba(0, 0, 0, 0.075);
+
+        .prices {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+
+            img {
+                width: 100%;
+                height: 320px;
+
+            }
+
+            h1 {
+                color: black;
+                font-size: 16px;
+                margin: 0;
+            }
+
+            h2 {
+                color: black;
+                font-size: 13px;
+                margin: 0;
+            }
+
+            h3 {
+                color: rgb(102, 96, 96);
+                margin: 0;
+                font-size: 12px;
+
+                b {
+                    color: black;
+                    font-size: 14px;
+                }
+            }
+        }
     }
